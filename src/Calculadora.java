@@ -2,17 +2,18 @@ import javax.swing.JOptionPane; // Importa a classe JOptionPane para exibir diá
 
 public class Calculadora {
     public static void main(String[] args) {
-        while (true) { // Loop infinito para manter a calculadora em execução até o usuário escolher sair
+        while (true) { // Loop infinito para manter a calculadora em execução até o usuário escolher
+                       // sair
             // Exibir menu de operações
             String menu = "Escolha a operação:\n" +
-                          "1. Adição (+)\n" +
-                          "2. Subtração (-)\n" +
-                          "3. Multiplicação (*)\n" +
-                          "4. Divisão (/)\n" +
-                          "5. Potência (^)\n" +
-                          "6. Raiz Quadrada (√)\n" +
-                          "7. Módulo (%)\n" +
-                          "8. Sair";
+                    "1. Adição (+)\n" +
+                    "2. Subtração (-)\n" +
+                    "3. Multiplicação (*)\n" +
+                    "4. Divisão (/)\n" +
+                    "5. Potência (^)\n" +
+                    "6. Raiz Quadrada (√)\n" +
+                    "7. Módulo (%)\n" +
+                    "8. Sair";
             String escolha = JOptionPane.showInputDialog(menu); // Exibe o menu e obtém a escolha do usuário
 
             // Verificar se o usuário escolheu sair
@@ -26,10 +27,33 @@ public class Calculadora {
 
             // Obter entrada do usuário
             if (!isUnaryOperation) { // Se a operação não for unária
-                num1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número: ").replace(',', '.')); // Obtém o primeiro número e substitui vírgula por ponto
-                num2 = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número: ").replace(',', '.')); // Obtém o segundo número e substitui vírgula por ponto
+                num1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o primeiro número: ").replace(',', '.')); // Obtém
+                                                                                                                        // o
+                                                                                                                        // primeiro
+                                                                                                                        // número
+                                                                                                                        // e
+                                                                                                                        // substitui
+                                                                                                                        // vírgula
+                                                                                                                        // por
+                                                                                                                        // ponto
+                num2 = Double.parseDouble(JOptionPane.showInputDialog("Insira o segundo número: ").replace(',', '.')); // Obtém
+                                                                                                                       // o
+                                                                                                                       // segundo
+                                                                                                                       // número
+                                                                                                                       // e
+                                                                                                                       // substitui
+                                                                                                                       // vírgula
+                                                                                                                       // por
+                                                                                                                       // ponto
             } else { // Se a operação for unária
-                num1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o número: ").replace(',', '.')); // Obtém o número e substitui vírgula por ponto
+                num1 = Double.parseDouble(JOptionPane.showInputDialog("Insira o número: ").replace(',', '.')); // Obtém
+                                                                                                               // o
+                                                                                                               // número
+                                                                                                               // e
+                                                                                                               // substitui
+                                                                                                               // vírgula
+                                                                                                               // por
+                                                                                                               // ponto
             }
 
             // Realizar a operação escolhida

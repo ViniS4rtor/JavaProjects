@@ -1,7 +1,11 @@
 import java.util.Scanner;
 
 public class ContagemParImpar {
-
+    /**
+     * Programa que lê 10 números inteiros e conta quantos são pares e quantos são
+     * ímpares,
+     * exibindo os números separados em duas listas.
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

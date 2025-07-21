@@ -16,7 +16,7 @@ public class SaLogica {
         double[] totalVendas = new double[numVendedores]; // Total de vendas semanais por vendedor
 
         // Array com os nomes dos dias úteis
-        String[] diasDaSemana = {"Segunda", "Terça", "Quarta", "Quinta", "Sexta"};
+        String[] diasDaSemana = { "Segunda", "Terça", "Quarta", "Quinta", "Sexta" };
 
         // Inserir os nomes dos vendedores e suas vendas
         for (int i = 0; i < numVendedores; i++) {
